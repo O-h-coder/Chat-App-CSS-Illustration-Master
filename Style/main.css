@@ -1,0 +1,25 @@
+/* Start Basic Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: 0;
+  font-size: 16px;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+}
+:root {
+  --main-heading: #3e2753;
+  --placeholder-text: #c6cacd;
+  --chat-on-the-right-paragraph: #a39daa;
+  --chat-on-the-left: #9241c8;
+  --sub-heading-at-the-top-of-the-app-UI: #d89eff;
+  --Gradients-one: #e942ff;
+  --Gradients-two: #8838ff;
+  --app-background: #f5f3f7;
+  --submit-button-background: #3e2753;
+  --radio-button-outline: #e570ff;
+}
+/* End Basic Rules */
