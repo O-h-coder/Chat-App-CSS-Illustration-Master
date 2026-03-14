@@ -212,6 +212,42 @@ img {
 }
 /* End Section */
 
+/* Start Footer */
+.footer {
+  margin: 0 auto 20px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.footer .in-1 {
+  width: 100%;
+  padding: 20px;
+  padding-left: 50px;
+  border: none;
+  border-radius: 30px;
+}
+.footer .in-1::placeholder {
+  color: var(--placeholder-text);
+}
+.footer .in-2 {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--submit-button-background);
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.footer .in-1:focus {
+  outline: none;
+}
+/* End Footer */
+
 /* End Main One */
 /* ! */
 /* ! */
