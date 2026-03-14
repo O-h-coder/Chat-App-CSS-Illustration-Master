@@ -15,6 +15,7 @@ body {
   font-size: 1rem;
 }
 :root {
+  --background-message: #ede5f4;
   --main-heading: #3e2753;
   --placeholder-text: #c6cacd;
   --chat-on-the-right-paragraph: #a39daa;
@@ -62,12 +63,13 @@ img {
 
 .container .main-one .box-phone {
   display: flex;
-  background-color: rgba(0, 128, 0, 0.4);
+  background-color: var(--app-background);
   flex-direction: column;
   border-radius: 55px;
   margin: 20px auto;
   border: 15px solid #ffffff;
 }
+/* Start Head */
 .main-one .box-phone .head {
   padding: 60px 20px 25px;
   display: flex;
@@ -116,6 +118,99 @@ img {
   color: var(--sub-heading-at-the-top-of-the-app-UI);
   opacity: 0.5;
 }
+/* End Head */
+
+/* Start Section */
+.main-one .section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-one .section .message-one {
+  padding: 15px;
+  background: #ede5f4;
+  width: 250px;
+  border-radius: 20px;
+  color: var(--chat-on-the-left);
+  border-bottom-left-radius: 0;
+}
+.main-one .section .message-two {
+  padding: 15px;
+  background: #ede5f4;
+  width: 250px;
+  border-radius: 20px;
+  color: var(--chat-on-the-left);
+  border-bottom-left-radius: 0;
+}
+.main-one .section .message-three {
+  align-self: flex-end;
+}
+.main-one .section .message-three img {
+  width: 100px;
+  margin: 5px;
+  border-radius: 20px;
+}
+.main-one .section .message-four {
+  align-self: flex-end;
+  padding: 15px;
+  background: #ffffff;
+  width: 250px;
+  border-radius: 20px;
+  color: var(--chat-on-the-right-paragraph);
+  box-shadow: 0px 4px 5px 2px #0000000d;
+  border-bottom-right-radius: 0;
+}
+.main-one .section .message-five {
+  align-self: flex-end;
+  padding: 15px;
+  background: #ffffff;
+  width: 250px;
+  border-radius: 20px;
+  color: var(--chat-on-the-right-paragraph);
+  box-shadow: 0px 4px 5px 2px #0000000d;
+  border-bottom-right-radius: 0;
+}
+.main-one .section .message-six {
+  padding: 15px;
+  background: #ede5f4;
+  width: 250px;
+  border-radius: 20px;
+  color: var(--chat-on-the-left);
+  border-bottom-left-radius: 0;
+}
+.main-one .section .message-seven .select-box > div {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-image: linear-gradient(
+    10deg,
+    var(--Gradients-two),
+    var(--Gradients-one)
+  );
+  color: #ffffff;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  border-bottom-left-radius: 0;
+}
+.main-one .section .message-seven .select-box > div::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--radio-button-outline);
+}
+.main-one .section .message-seven .select-box > div > p:first-child {
+  margin-left: 15px;
+}
+.main-one .section .message-seven .select-box > div > p:last-child {
+  position: absolute;
+  right: 20px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+/* End Section */
 
 /* End Main One */
 /* ! */
