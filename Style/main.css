@@ -12,8 +12,6 @@ html {
 }
 body {
   position: relative;
-  width: 100vh;
-  height: 100vh;
 }
 :root {
   --main-heading: #3e2753;
@@ -27,21 +25,51 @@ body {
   --submit-button-background: #3e2753;
   --radio-button-outline: #e570ff;
 }
-/* End Basic Rules */
-/* Start Main Section */
-.main {
-  position: absolute;
-  top: 0;
-  left: -100px;
-  width: 500px;
-  height: 90%;
-  border-bottom-right-radius: 250px;
-  border-bottom-left-radius: 250px;
-  background-image: linear-gradient(
-    to right,
-    var(--Gradients-two, #8838ff),
-    var(--Gradients-one, #e942ff)
-  );
-  z-index: -1;
+/* Start Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
 }
-/* End Main Section */
+/* End Container */
+/* Mobile */
+@media (min-width: 319px) {
+  .container {
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+/* Desktop */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+img {
+  width: 30px;
+}
+/* End Basic Rules */
+
+/* Start main Two */
+.container .main-two {
+  max-width: 450px;
+  min-width: 300px;
+}
+.container .main-two h1 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--main-heading);
+}
+.container .main-two p {
+  line-height: 1.8;
+  color: var(--placeholder-text);
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .container .main-two {
+    text-align: center;
+  }
+}
+/* End main Two */
