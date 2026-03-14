@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
   font-family: "Rubik", sans-serif;
 }
+body {
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+}
 :root {
   --main-heading: #3e2753;
   --placeholder-text: #c6cacd;
@@ -23,3 +28,20 @@ html {
   --radio-button-outline: #e570ff;
 }
 /* End Basic Rules */
+/* Start Main Section */
+.main {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 500px;
+  height: 90%;
+  border-bottom-right-radius: 250px;
+  border-bottom-left-radius: 250px;
+  background-image: linear-gradient(
+    to right,
+    var(--Gradients-two, #8838ff),
+    var(--Gradients-one, #e942ff)
+  );
+  z-index: -1;
+}
+/* End Main Section */
